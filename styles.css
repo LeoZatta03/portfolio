@@ -1,0 +1,153 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth; /* Adiciona rolagem suave ao clicar em links de âncora */
+}
+
+:root{
+  --primaria: #4f46e5;
+  --secundaria: #7c3aed;
+  --escuro: #0f172a;
+  --maisEscuro: #0a0f1c;
+  --claro: #e2e8f0;
+  --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body{
+  background-color: var(--escuro);
+  color: var(--claro);
+}
+
+.navegacao{
+  position: fixed; /* Mantém a barra de navegação fixa no topo da página */
+  background: rgba(15,23,42,0.8); /* Fundo semi-transparente */
+  backdrop-filter: blur(10px); /* Efeito de desfoque */
+  width: 100%; /* Ocupa toda a largura da tela */
+  z-index: 100; /* Garante que a barra de navegação fique acima de outros elementos */
+  top: 0; /* Fixa no topo da página */
+  padding: 1.5rem 0; /* Espaçamento interno */
+}
+
+.menu{
+  display: flex; /* Utiliza flexbox para organizar os itens do menu */
+  list-style: none; /* Remove os marcadores da lista */
+  gap: 3rem; /* Espaçamento entre os itens do menu */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.menu-link{
+  text-decoration: none;/* Remove o sublinhado dos links */
+  color: var(--claro); /* Cor do texto */ 
+  font-weight: 500;
+  position:relative; /* Necessário para o posicionamento do pseudo-elemento */
+  padding: 0.5rem 0;
+}
+
+.menu-link::after{
+  content: ''; 
+  height: 2px; /* Altura da linha de destaque */
+  width: 0; /*  Inicialmente, a linha de destaque não é visível */
+  position: absolute; /* Permite posicionar a linha de destaque em relação ao link */
+  bottom: 0; /* Posiciona a linha de destaque na parte inferior do link */
+  left: 0; /* Alinha a linha de destaque à esquerda do link */
+  background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+  transition: width 0.5s ease; /* Adiciona uma transição suave à expansão da linha de destaque */
+}
+
+.menu-link:hover::after{
+  width: 100%; /* A linha de destaque se expande para a largura total do link ao passar o mouse */
+  transition: 0.3s; /* Adiciona uma transição suave à expansão da linha de destaque */
+}
+
+.cabecalho{
+  min-height: 100vh;
+  display: flex; /* Utiliza flexbox para organizar os elementos */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  align-items: center; /* Centraliza os elementos verticalmente */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  text-align: center; /* Centraliza o texto */
+}
+
+.foto-perfil{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+  border: 4px solid var(--vidro); /* Adiciona uma borda ao redor da imagem */
+  box-shadow: 0 0 20px rgba(79,70,229, 0.3); /* Adiciona uma sombra suave à imagem */
+}
+
+h1{
+  font-size: 3.5rem;
+  color: var(--primaria);
+  font-weight: bold;
+  margin: 20px; /* Adiciona uma margem ao redor do título */
+}
+
+.cabecalho-sub-titulo{
+  font-size: 1.5rem;
+  color: var(--claro);
+}
+
+.sobre{
+  padding: 6rem 2rem;/* Adiciona espaçamento interno à seção "Sobre" */
+}
+
+.sobre-titulo{
+  font-size: 3rem;
+  color: var(--claro);
+  text-align: center; /* Centraliza o título da seção "Sobre" */
+  margin-bottom: 20px;
+}
+
+.sobre-caixa{
+  padding: 2rem;
+  max-width: 800px; /* Define a largura máxima da caixa de conteúdo */
+  margin: 0 auto; /* Centraliza a caixa de conteúdo horizontalmente */  
+  border-radius: 16px;
+  border: 1px solid var(--vidro);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05); /* Fundo semi-transparente */
+}
+
+.sobre-paragrafo{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.projetos{
+  padding: 6rem 2rem; /* Adiciona espaçamento interno à seção "Projetos" */
+}
+
+.projetos-caixa{
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.projetos-card{
+
+}
+
+.projetos-titulo{
+
+}
+
+.projetos-imagem{
+  height: 200px;
+  width: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+}
+
+.paragrafo-projetos{
+
+}
+
+.info-projetos{
+
+
+}
