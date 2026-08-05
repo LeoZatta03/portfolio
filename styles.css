@@ -80,6 +80,7 @@ body{
   object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
   border: 4px solid var(--vidro); /* Adiciona uma borda ao redor da imagem */
   box-shadow: 0 0 20px rgba(79,70,229, 0.3); /* Adiciona uma sombra suave à imagem */
+  animation: flutuar 5s ease-in-out infinite; /* Adiciona uma animação de flutuação à imagem */
 }
 
 h1{
@@ -240,4 +241,14 @@ h1{
     radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
     radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
     var(--maisEscuro);
+}
+
+@keyframes flutuar{
+  0%, 100%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-20px);
+  }
 }
