@@ -18,11 +18,11 @@ Repositório do meu portfólio pessoal como Desenvolvedor Front End. O projeto f
 - **Início / Hero**: Apresentação principal com design em tom escuro (*dark theme*) e destaques visuais.
 ![Preview](./assets/preview.png)
 - **Sobre Mim**: Breve resumo da minha trajetória, formação em Sistemas de Informação na Universidade Feevale e foco de atuação.
-![Preview](./assets/preview sobre.png)
+![Preview](./assets/preview%20sobre.png)
 - **Projetos**: Vitrine interativa apresentando minhas aplicações (Loja de Carros, Página de Viagens, Conversor de Moeda, entre outros).
-![Preview](./assets/preview projetos.png)
+![Preview](./assets/preview%20projetos.png)
 - **Contato**: Formulário integrado para envio rápido de mensagem direto via WhatsApp.
-![Preview](./assets/preview contato.png)
+![Preview](./assets/preview%20contato.png)
 
 ---
 
