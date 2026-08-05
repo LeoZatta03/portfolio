@@ -65,7 +65,7 @@ body{
 }
 
 .cabecalho{
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex; /* Utiliza flexbox para organizar os elementos */
   justify-content: center; /* Centraliza os elementos horizontalmente */
   align-items: center; /* Centraliza os elementos verticalmente */
@@ -107,13 +107,14 @@ h1{
 }
 
 .sobre-caixa{
-  padding: 2rem;
+  padding: 3rem;
   max-width: 800px; /* Define a largura máxima da caixa de conteúdo */
   margin: 0 auto; /* Centraliza a caixa de conteúdo horizontalmente */  
   border-radius: 16px;
   border: 1px solid var(--vidro);
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.05); /* Fundo semi-transparente */
+  line-height: 2rem;
 }
 
 .sobre-paragrafo{
